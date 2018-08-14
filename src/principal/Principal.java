@@ -84,7 +84,7 @@ public class Principal extends DefaultTableModel{
 	private void initialize(){
 		
 
-		String [] colunas = {"Segunda", "Treça", "Quarta", "Quinta", "Sexta", "Sabado"};
+		String [] colunas = {"Segunda", "TreÃ§a", "Quarta", "Quinta", "Sexta", "Sabado"};
 		
 		Object [][] dados = {
 			    {"", "", "", "", "", "", ""},
@@ -171,12 +171,12 @@ public class Principal extends DefaultTableModel{
 					out = new FileOutputStream(new File("Cardapio.xlsx"));
 				} catch (FileNotFoundException e1) {
 					// TODO Auto-generated catch block
-					JOptionPane.showMessageDialog(null,"Arquivo Aberto. Feche para continuar a impressão!", null, JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(null,"Arquivo Aberto. Feche para continuar a impressÃ£o!", null, JOptionPane.ERROR_MESSAGE);
 					e1.printStackTrace();
 				}
 			      XSSFSheet spreadsheet = workbook.createSheet("Cardapio");
 			      Header header = spreadsheet.getHeader();		
-			      header.setCenter("Cardápio Mês " +Mes);
+			      header.setCenter("CardÃ¡pio MÃªs " +Mes);
 			      workbook.setPrintArea(0, 0, 5, 0, 6);
 			      spreadsheet.setColumnWidth((short) (0), (short) (10 * 612.55));
 			      spreadsheet.setColumnWidth((short) (1), (short) (10 * 612.55));
@@ -197,7 +197,7 @@ public class Principal extends DefaultTableModel{
 
 			      Map < String, Object[] > empinfo = 
 			      new TreeMap < String, Object[] >();
-			      empinfo.put( "1", new Object[] { "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sabado" });
+			      empinfo.put( "1", new Object[] { "Segunda", "TerÃ§a", "Quarta", "Quinta", "Sexta", "Sabado" });
 			      empinfo.put( "11", new Object[] { ""+tabela.getValueAt(0, 0), ""+tabela.getValueAt(0, 1), ""+tabela.getValueAt(0, 2), ""+tabela.getValueAt(0, 3), ""+tabela.getValueAt(0, 4), ""+tabela.getValueAt(0, 5) });
 			      empinfo.put( "111", new Object[] { ""+tabela.getValueAt(1, 0), ""+tabela.getValueAt(1, 1), ""+tabela.getValueAt(1, 2), ""+tabela.getValueAt(1, 3), ""+tabela.getValueAt(1, 4), ""+tabela.getValueAt(1, 5) });
 			      empinfo.put( "1111", new Object[] { ""+tabela.getValueAt(2, 0), ""+tabela.getValueAt(2, 1), ""+tabela.getValueAt(2, 2), ""+tabela.getValueAt(2, 3), ""+tabela.getValueAt(2, 4), ""+tabela.getValueAt(2, 5) });
@@ -205,7 +205,7 @@ public class Principal extends DefaultTableModel{
 			      empinfo.put( "111111", new Object[] { ""+tabela.getValueAt(4, 0), ""+tabela.getValueAt(4, 1), ""+tabela.getValueAt(4, 2), ""+tabela.getValueAt(4, 3), ""+tabela.getValueAt(4, 4), ""+tabela.getValueAt(4, 5) });
 			      empinfo.put( "1111111", new Object[] { ""+tabela.getValueAt(5, 0), ""+tabela.getValueAt(5, 1), ""+tabela.getValueAt(5, 2), ""+tabela.getValueAt(5, 3), ""+tabela.getValueAt(5, 4), ""+tabela.getValueAt(5, 5) });
 			      empinfo.put( "11111111", new Object[] { ""+tabela.getValueAt(6, 0), ""+tabela.getValueAt(6, 1), ""+tabela.getValueAt(6, 2), ""+tabela.getValueAt(6, 3), ""+tabela.getValueAt(6, 4), ""+tabela.getValueAt(6, 5) });
-			      empinfo.put( "111111111", new Object[] { "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sabado" });
+			      empinfo.put( "111111111", new Object[] { "Segunda", "TerÃ§a", "Quarta", "Quinta", "Sexta", "Sabado" });
 			      empinfo.put( "1111111111", new Object[] { ""+tabela.getValueAt(8, 0), ""+tabela.getValueAt(8, 1), ""+tabela.getValueAt(8, 2), ""+tabela.getValueAt(8, 3), ""+tabela.getValueAt(8, 4), ""+tabela.getValueAt(8, 5) });
 			      empinfo.put( "11111111111", new Object[] { ""+tabela.getValueAt(9, 0), ""+tabela.getValueAt(9, 1), ""+tabela.getValueAt(9, 2), ""+tabela.getValueAt(9, 3), ""+tabela.getValueAt(9, 4), ""+tabela.getValueAt(9, 5) });
 			      empinfo.put( "111111111111", new Object[] { ""+tabela.getValueAt(10, 0), ""+tabela.getValueAt(10, 1), ""+tabela.getValueAt(10, 2), ""+tabela.getValueAt(10, 3), ""+tabela.getValueAt(10, 4), ""+tabela.getValueAt(10, 5) });
@@ -213,7 +213,7 @@ public class Principal extends DefaultTableModel{
 			      empinfo.put( "11111111111111", new Object[] { ""+tabela.getValueAt(12, 0), ""+tabela.getValueAt(12, 1), ""+tabela.getValueAt(12, 2), ""+tabela.getValueAt(12, 3), ""+tabela.getValueAt(12, 4), ""+tabela.getValueAt(12, 5) });
 			      empinfo.put( "111111111111111", new Object[] { ""+tabela.getValueAt(13, 0), ""+tabela.getValueAt(13, 1), ""+tabela.getValueAt(13, 2), ""+tabela.getValueAt(13, 3), ""+tabela.getValueAt(13, 4), ""+tabela.getValueAt(13, 5) });
 			      empinfo.put( "1111111111111111", new Object[] { ""+tabela.getValueAt(14, 0), ""+tabela.getValueAt(14, 1), ""+tabela.getValueAt(14, 2), ""+tabela.getValueAt(14, 3), ""+tabela.getValueAt(14, 4), ""+tabela.getValueAt(14, 5) });
-			      empinfo.put( "11111111111111111", new Object[] { "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sabado" });
+			      empinfo.put( "11111111111111111", new Object[] { "Segunda", "TerÃ§a", "Quarta", "Quinta", "Sexta", "Sabado" });
 			      empinfo.put( "111111111111111111", new Object[] { ""+tabela.getValueAt(16, 0), ""+tabela.getValueAt(16, 1), ""+tabela.getValueAt(16, 2), ""+tabela.getValueAt(16, 3), ""+tabela.getValueAt(16, 4), ""+tabela.getValueAt(16, 5) });
 			      empinfo.put( "1111111111111111111", new Object[] { ""+tabela.getValueAt(17, 0), ""+tabela.getValueAt(17, 1), ""+tabela.getValueAt(17, 2), ""+tabela.getValueAt(17, 3), ""+tabela.getValueAt(17, 4), ""+tabela.getValueAt(17, 5) });
 			      empinfo.put( "11111111111111111111", new Object[] { ""+tabela.getValueAt(18, 0), ""+tabela.getValueAt(18, 1), ""+tabela.getValueAt(18, 2), ""+tabela.getValueAt(18, 3), ""+tabela.getValueAt(18, 4), ""+tabela.getValueAt(18, 5) });
@@ -221,7 +221,7 @@ public class Principal extends DefaultTableModel{
 			      empinfo.put( "1111111111111111111111", new Object[] { ""+tabela.getValueAt(20, 0), ""+tabela.getValueAt(20, 1), ""+tabela.getValueAt(20, 2), ""+tabela.getValueAt(20, 3), ""+tabela.getValueAt(20, 4), ""+tabela.getValueAt(20, 5) });
 			      empinfo.put( "11111111111111111111111", new Object[] { ""+tabela.getValueAt(21, 0), ""+tabela.getValueAt(21, 1), ""+tabela.getValueAt(21, 2), ""+tabela.getValueAt(21, 3), ""+tabela.getValueAt(21, 4), ""+tabela.getValueAt(21, 5) });
 			      empinfo.put( "111111111111111111111111", new Object[] { ""+tabela.getValueAt(22, 0), ""+tabela.getValueAt(22, 1), ""+tabela.getValueAt(22, 2), ""+tabela.getValueAt(22, 3), ""+tabela.getValueAt(22, 4), ""+tabela.getValueAt(22, 5) });
-			      empinfo.put( "1111111111111111111111111", new Object[] { "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sabado" });
+			      empinfo.put( "1111111111111111111111111", new Object[] { "Segunda", "TerÃ§a", "Quarta", "Quinta", "Sexta", "Sabado" });
 			      empinfo.put( "11111111111111111111111111", new Object[] { ""+tabela.getValueAt(24, 0), ""+tabela.getValueAt(24, 1), ""+tabela.getValueAt(24, 2), ""+tabela.getValueAt(24, 3), ""+tabela.getValueAt(24, 4), ""+tabela.getValueAt(24, 5) });
 			      empinfo.put( "111111111111111111111111111", new Object[] { ""+tabela.getValueAt(25, 0), ""+tabela.getValueAt(25, 1), ""+tabela.getValueAt(25, 2), ""+tabela.getValueAt(25, 3), ""+tabela.getValueAt(25, 4), ""+tabela.getValueAt(25, 5) });
 			      empinfo.put( "1111111111111111111111111111", new Object[] { ""+tabela.getValueAt(26, 0), ""+tabela.getValueAt(26, 1), ""+tabela.getValueAt(26, 2), ""+tabela.getValueAt(26, 3), ""+tabela.getValueAt(26, 4), ""+tabela.getValueAt(26, 5) });
@@ -241,7 +241,7 @@ public class Principal extends DefaultTableModel{
 			         for (Object obj : objectArr) {
 			            Cell cell = row.createCell(cellid++);
 			            cell.setCellValue((String)obj);
-			            	if(obj == "Segunda" || obj == "Terça" || obj == "Quarta"|| obj == "Quinta"|| obj == "Sexta"|| obj == "Sabado" || cellid+1 == -1) {
+			            	if(obj == "Segunda" || obj == "TerÃ§a" || obj == "Quarta"|| obj == "Quinta"|| obj == "Sexta"|| obj == "Sabado") {
 			            		
 			            	}else {
 			            		cell.setCellStyle(estilo);
