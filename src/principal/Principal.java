@@ -241,7 +241,11 @@ public class Principal extends DefaultTableModel{
 			         for (Object obj : objectArr) {
 			            Cell cell = row.createCell(cellid++);
 			            cell.setCellValue((String)obj);
-			            cell.setCellStyle(estilo);
+			            	if(obj == "Segunda" || obj == "Terça" || obj == "Quarta"|| obj == "Quinta"|| obj == "Sexta"|| obj == "Sabado" || cellid+1 == -1) {
+			            		
+			            	}else {
+			            		cell.setCellStyle(estilo);
+			            	}
 			            			            
 			         }
 			      }
